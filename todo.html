@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="todo.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List <img src="images/eb588efec68a7e743b96d844ced0da2e.jpg" ></h2>
+
+
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search tasks...">
+                <button onclick="searchTasks()">Search</button>
+            </div>
+
+            <div class="progress-container">
+                <h3>Progress Bar</h3> <!-- Title for the progress bar -->
+                <progress id="progress-bar" value="0" max="100"></progress>
+                <span id="progress-text">0/0</span>
+            </div>
+
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your task">
+                <input type="date" id="due-date" placeholder="Select Due Date">
+                
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- Tasks will appear here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
